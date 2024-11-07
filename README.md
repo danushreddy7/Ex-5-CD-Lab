@@ -14,19 +14,12 @@ To write a YACC program to recognize the grammar anb where n>=10.
 8.	Enter a string as input and it is identified as valid or invalid.
 # PROGRAM:
 # GAMMAR.I
-%{
-#include "y.tab.h"
-%}
+![image](https://github.com/user-attachments/assets/76741009-c29a-4ac0-908c-d56cfc19db59)
+# GAMMAR.Y
+![image](https://github.com/user-attachments/assets/07e4b03d-d1b2-48f4-a117-e902b6317882)
 
-%%
-a    { return A; }  // Recognize 'a' as token A
-b    { return B; }  // Recognize 'b' as token B
-.    { return 0; }  // End of input
-%%
+# OUTPUT:
+![image](https://github.com/user-attachments/assets/de760239-60ba-4ec0-b685-d63b8b59a6b1)
 
-int yywrap() {
-    return 1;
-}
-# OUTPUT
-# RESULT
+# RESULT:
 The YACC program to recognize the grammar anb where n>=10 is executed successfully and the output is verified.
